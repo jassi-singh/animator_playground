@@ -61,6 +61,7 @@ class ItemCard extends StatelessWidget {
             animationInfo.title,
             style: const TextStyle(
               color: Colors.white,
+              fontSize: 18,
             ),
           ),
         ),

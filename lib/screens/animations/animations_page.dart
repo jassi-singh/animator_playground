@@ -1,4 +1,5 @@
 import 'package:animator_playground/models/animation_model.dart';
+import 'package:animator_playground/screens/animations/rainy_night/rainy_night.dart';
 import 'package:flutter/material.dart';
 
 import 'loading/loading.dart';
@@ -21,9 +22,7 @@ class AnimationsPage extends StatelessWidget {
               onPressed: () => Navigator.pop(context),
             ),
           ),
-          Center(
-            child: _showAnimation(animationInfo.animationType),
-          ),
+          _showAnimation(animationInfo.animationType),
         ],
       ),
     );
@@ -35,6 +34,8 @@ class AnimationsPage extends StatelessWidget {
         return const MenuIcon();
       case AnimationType.loading:
         return const LoadingAnimation();
+      case AnimationType.rainyNight:
+        return const RainyNight();
       default:
         return const MenuIcon();
     }

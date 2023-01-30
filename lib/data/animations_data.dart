@@ -15,5 +15,12 @@ final animationsList = [
         'The best are always websites that do not need a loading status. If they do, here would be a calming one.',
     animationType: AnimationType.loading,
     color: const Color(0xffe56262),
-  )
+  ),
+  AnimationInfo(
+    title: 'Rainy Night',
+    description:
+        'The perfect time of day and the perfect weather to program in peace. The raindrops even shatter on the ground.',
+    animationType: AnimationType.rainyNight,
+    color: const Color(0xff1a2238),
+  ),
 ];

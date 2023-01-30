@@ -65,28 +65,30 @@ class _LoadingAnimationState extends State<LoadingAnimation>
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      alignment: Alignment.center,
-      children: [
-        Transform.scale(
-          scale: _bottomCircleAnimation.value,
-          child: const CircleWidget(
-            size: 210,
+    return Center(
+      child: Stack(
+        alignment: Alignment.center,
+        children: [
+          Transform.scale(
+            scale: _bottomCircleAnimation.value,
+            child: const CircleWidget(
+              size: 210,
+            ),
           ),
-        ),
-        Transform.scale(
-          scale: _middleCircleAnimation.value,
-          child: const CircleWidget(
-            size: 140,
+          Transform.scale(
+            scale: _middleCircleAnimation.value,
+            child: const CircleWidget(
+              size: 140,
+            ),
           ),
-        ),
-        Transform.scale(
-          scale: _topCircleAnimation.value,
-          child: const CircleWidget(
-            size: 70,
+          Transform.scale(
+            scale: _topCircleAnimation.value,
+            child: const CircleWidget(
+              size: 70,
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

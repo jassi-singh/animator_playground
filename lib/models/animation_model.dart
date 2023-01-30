@@ -14,4 +14,8 @@ class AnimationInfo {
   });
 }
 
-enum AnimationType { menuIcon,loading }
+enum AnimationType {
+  menuIcon,
+  loading,
+  rainyNight,
+}

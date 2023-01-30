@@ -66,39 +66,41 @@ class _MenuIconState extends State<MenuIcon>
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () {
-        if (_controller.isCompleted) {
-          _controller.reverse();
-        } else {
-          _controller.forward();
-        }
-      },
-      child: SizedBox(
-        width: 150,
-        height: 100,
-        child: Stack(
-          alignment: Alignment.center,
-          children: [
-            Transform.scale(
-              scale: _centerLineAnimation.value,
-              child: const HorizontalLine(),
-            ),
-            Transform.rotate(
-              angle: _rotationAnimation.value,
-              child: Align(
-                alignment: _topLineAnimation.value,
+    return Center(
+      child: InkWell(
+        onTap: () {
+          if (_controller.isCompleted) {
+            _controller.reverse();
+          } else {
+            _controller.forward();
+          }
+        },
+        child: SizedBox(
+          width: 150,
+          height: 100,
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              Transform.scale(
+                scale: _centerLineAnimation.value,
                 child: const HorizontalLine(),
               ),
-            ),
-            Transform.rotate(
-              angle: -_rotationAnimation.value,
-              child: Align(
-                alignment: _bottomLineAnimation.value,
-                child: const HorizontalLine(),
+              Transform.rotate(
+                angle: _rotationAnimation.value,
+                child: Align(
+                  alignment: _topLineAnimation.value,
+                  child: const HorizontalLine(),
+                ),
               ),
-            ),
-          ],
+              Transform.rotate(
+                angle: -_rotationAnimation.value,
+                child: Align(
+                  alignment: _bottomLineAnimation.value,
+                  child: const HorizontalLine(),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
