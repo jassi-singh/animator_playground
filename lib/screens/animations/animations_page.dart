@@ -1,6 +1,7 @@
 import 'package:animator_playground/models/animation_model.dart';
 import 'package:flutter/material.dart';
 
+import 'loading/loading.dart';
 import 'menu_icon/menu_icon.dart';
 
 class AnimationsPage extends StatelessWidget {
@@ -32,6 +33,8 @@ class AnimationsPage extends StatelessWidget {
     switch (animationType) {
       case AnimationType.menuIcon:
         return const MenuIcon();
+      case AnimationType.loading:
+        return const LoadingAnimation();
       default:
         return const MenuIcon();
     }
