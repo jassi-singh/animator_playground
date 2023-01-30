@@ -1,3 +1,4 @@
+import 'package:animator_playground/constants/my_theme.dart';
 import 'package:animator_playground/screens/homepage.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Animator Playground',
-      theme: ThemeData(),
+      theme: ThemeData(
+        primarySwatch: MyTheme.myTheme,
+      ),
       home: const HomePage(),
     );
   }
