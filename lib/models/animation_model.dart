@@ -18,4 +18,5 @@ enum AnimationType {
   menuIcon,
   loading,
   rainyNight,
+  watch,
 }

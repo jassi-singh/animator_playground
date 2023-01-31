@@ -62,6 +62,13 @@ class ItemCard extends StatelessWidget {
             style: const TextStyle(
               color: Colors.white,
               fontSize: 18,
+              shadows: [
+                Shadow(
+                  color: Colors.black45,
+                  offset: Offset(1, 1),
+                  blurRadius: 5,
+                ),
+              ],
             ),
           ),
         ),

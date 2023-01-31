@@ -23,4 +23,11 @@ final animationsList = [
     animationType: AnimationType.rainyNight,
     color: const Color(0xff1a2238),
   ),
+  AnimationInfo(
+    title: 'Watch',
+    description:
+        'Classic, noble, modern or playful? What do you want your favorite watch to look like?',
+    animationType: AnimationType.watch,
+    color: const Color(0xff4c4c4c),
+  ),
 ];
