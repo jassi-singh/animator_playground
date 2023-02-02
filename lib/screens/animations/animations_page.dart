@@ -1,4 +1,5 @@
 import 'package:animator_playground/models/animation_model.dart';
+import 'package:animator_playground/screens/animations/pacman/pacman.dart';
 import 'package:animator_playground/screens/animations/rainy_night/rainy_night.dart';
 import 'package:animator_playground/screens/animations/watch/watch.dart';
 import 'package:flutter/material.dart';
@@ -39,6 +40,8 @@ class AnimationsPage extends StatelessWidget {
         return const RainyNight();
       case AnimationType.watch:
         return const Watch();
+      case AnimationType.pacman:
+        return const Pacman();
       default:
         return const MenuIcon();
     }

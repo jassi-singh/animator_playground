@@ -30,4 +30,11 @@ final animationsList = [
     animationType: AnimationType.watch,
     color: const Color(0xff4c4c4c),
   ),
+  AnimationInfo(
+    title: 'Pac-Man',
+    description:
+        'The classic arcade game is still a lot of fun. The ghosts are chasing you, but you can eat them.',
+    animationType: AnimationType.pacman,
+    color: const Color(0xff2c2e2e),
+  ),
 ];

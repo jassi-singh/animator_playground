@@ -19,4 +19,5 @@ enum AnimationType {
   loading,
   rainyNight,
   watch,
+  pacman,
 }
