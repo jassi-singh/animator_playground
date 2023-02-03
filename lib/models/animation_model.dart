@@ -21,4 +21,5 @@ enum AnimationType {
   watch,
   pacman,
   sendMail,
+  pendulumWave,
 }

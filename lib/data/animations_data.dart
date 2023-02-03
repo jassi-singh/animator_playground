@@ -44,4 +44,11 @@ final animationsList = [
     animationType: AnimationType.sendMail,
     color: const Color(0xff2b3c4e),
   ),
+  AnimationInfo(
+    title: 'Pendulam Wave',
+    description:
+        "If you are not yet fascinated by mathematics, you should be now at the latest. Wonderful what a small calculations brings forth.",
+    animationType: AnimationType.pendulumWave,
+    color: const Color(0xff4c4ba2),
+  )
 ];
