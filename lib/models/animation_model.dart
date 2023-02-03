@@ -20,4 +20,5 @@ enum AnimationType {
   rainyNight,
   watch,
   pacman,
+  sendMail,
 }

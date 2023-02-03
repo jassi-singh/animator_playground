@@ -37,4 +37,11 @@ final animationsList = [
     animationType: AnimationType.pacman,
     color: const Color(0xff2c2e2e),
   ),
+  AnimationInfo(
+    title: 'Send Mail',
+    description:
+        'Surprise your visitors with a nice animation instead of a simple "request sent".',
+    animationType: AnimationType.sendMail,
+    color: const Color(0xff2b3c4e),
+  ),
 ];
