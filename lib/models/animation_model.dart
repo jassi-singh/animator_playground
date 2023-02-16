@@ -22,4 +22,5 @@ enum AnimationType {
   pacman,
   sendMail,
   pendulumWave,
+  rotatingSquare,
 }

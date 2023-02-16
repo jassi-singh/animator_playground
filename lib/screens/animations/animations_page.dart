@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 
 import 'loading/loading.dart';
 import 'menu_icon/menu_icon.dart';
+import 'rotating_squares/rotating_squares.dart';
 
 class AnimationsPage extends StatelessWidget {
   final AnimationInfo animationInfo;
@@ -48,6 +49,8 @@ class AnimationsPage extends StatelessWidget {
         return const SendMail();
       case AnimationType.pendulumWave:
         return const PendulamWave();
+      case AnimationType.rotatingSquare:
+        return const RotatingSquares();
       default:
         return const MenuIcon();
     }

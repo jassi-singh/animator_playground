@@ -50,5 +50,12 @@ final animationsList = [
         "If you are not yet fascinated by mathematics, you should be now at the latest. Wonderful what a small calculations brings forth.",
     animationType: AnimationType.pendulumWave,
     color: const Color(0xff4c4ba2),
-  )
+  ),
+  AnimationInfo(
+    title: 'Rotating Square',
+    description:
+        'A simple animation that can be used in many ways. For example, to indicate that the page is loading.',
+    animationType: AnimationType.rotatingSquare,
+    color: const Color(0xff152037),
+  ),
 ];
