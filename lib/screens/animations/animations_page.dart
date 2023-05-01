@@ -1,4 +1,5 @@
 import 'package:animator_playground/models/animation_model.dart';
+import 'package:animator_playground/screens/animations/day_night_slider/day_night_slider.dart';
 import 'package:animator_playground/screens/animations/pacman/pacman.dart';
 import 'package:animator_playground/screens/animations/pendulam_wave/pendulam_wave.dart';
 import 'package:animator_playground/screens/animations/rainy_night/rainy_night.dart';
@@ -51,6 +52,8 @@ class AnimationsPage extends StatelessWidget {
         return const PendulamWave();
       case AnimationType.rotatingSquare:
         return const RotatingSquares();
+      case AnimationType.dayNightSlider:
+        return const DayNightSlider();
       default:
         return const MenuIcon();
     }

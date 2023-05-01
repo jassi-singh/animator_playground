@@ -58,4 +58,10 @@ final animationsList = [
     animationType: AnimationType.rotatingSquare,
     color: const Color(0xff152037),
   ),
+  AnimationInfo(
+    title: 'Day Night Slider',
+    description: 'A cool slider animation for day and night mode.',
+    animationType: AnimationType.dayNightSlider,
+    color: const Color(0xffccd0d9),
+  ),
 ];

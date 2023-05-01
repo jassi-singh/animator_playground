@@ -23,4 +23,5 @@ enum AnimationType {
   sendMail,
   pendulumWave,
   rotatingSquare,
+  dayNightSlider,
 }

@@ -13,11 +13,10 @@ class SendButton extends StatelessWidget {
     return BlocBuilder<ButtonBloc, ButtonState>(
       builder: (context, state) {
         ButtonBloc buttonBloc = context.read<ButtonBloc>();
-        return ElevatedButton(
+        return FilledButton(
           onPressed: _onPressed(buttonBloc, state),
           style: ElevatedButton.styleFrom(
-            primary: const Color(0xff16b396),
-            onPrimary: Colors.white,
+            backgroundColor: const Color(0xff16b396),
             shape: const StadiumBorder(),
             padding: const EdgeInsets.symmetric(
               vertical: 15,

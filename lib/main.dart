@@ -1,4 +1,3 @@
-import 'package:animator_playground/constants/my_theme.dart';
 import 'package:animator_playground/screens/homepage.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Animator Playground',
       theme: ThemeData(
-        primarySwatch: MyTheme.myTheme,
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.white,
+        ),
       ),
       home: const HomePage(),
     );
