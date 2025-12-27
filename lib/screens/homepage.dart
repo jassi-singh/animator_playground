@@ -1,8 +1,8 @@
-import 'package:animator_playground/data/animations_data.dart';
-import 'package:animator_playground/screens/animations/animations_page.dart';
+import 'package:animator_playground/screens/animations/day_night_slider/day_night_slider.dart';
+import 'package:animator_playground/screens/animations/watch/watch.dart';
+import 'package:animator_playground/screens/animations/send_mail/send_mail.dart';
+import 'package:animator_playground/screens/animations/rainy_night/rainy_night.dart';
 import 'package:flutter/material.dart';
-
-import '../models/animation_model.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -14,74 +14,59 @@ class HomePage extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: LayoutBuilder(
-          builder: (context, constraints) {
-            // Calculate crossAxisCount based on screen width
-            // Aim for approximately 200px per item
-            int crossAxisCount = (constraints.maxWidth / 200).floor();
-            // Ensure minimum of 2 columns and maximum of 6 columns
-            crossAxisCount = crossAxisCount.clamp(2, 6);
-            
-            return GridView.builder(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: crossAxisCount,
-                mainAxisSpacing: 10,
-                crossAxisSpacing: 10,
-              ),
-              itemCount: animationsList.length,
-              itemBuilder: (BuildContext context, int index) {
-                return ItemCard(animationInfo: animationsList[index]);
-              },
-            );
-          },
+        child: GridView.count(
+          crossAxisCount: 2,
+          mainAxisSpacing: 10,
+          crossAxisSpacing: 10,
+          children: const [
+            // Day Night Slider
+            _AnimationCell(
+              child: DayNightSlider(),
+              color: Color(0xffccd0d9),
+            ),
+            // Watch
+            _AnimationCell(
+              child: Watch(),
+              color: Color(0xff4c4c4c),
+            ),
+            // Send Mail
+            _AnimationCell(
+              child: SendMail(),
+              color: Color(0xff2b3c4e),
+            ),
+            // Rainy Night
+            _AnimationCell(
+              child: RainyNight(),
+              color: Color(0xff1a2238),
+            ),
+          ],
         ),
       ),
     );
   }
 }
 
-class ItemCard extends StatelessWidget {
-  final AnimationInfo animationInfo;
-  const ItemCard({
+class _AnimationCell extends StatelessWidget {
+  final Widget child;
+  final Color color;
+  
+  const _AnimationCell({
     Key? key,
-    required this.animationInfo,
+    required this.child,
+    required this.color,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () => Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (BuildContext context) {
-            return AnimationsPage(
-              animationInfo: animationInfo,
-            );
-          },
-        ),
+    return Card(
+      color: color,
+      elevation: 10,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10),
       ),
-      child: Card(
-        color: animationInfo.color,
-        elevation: 10,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10),
-        ),
-        child: Center(
-          child: Text(
-            animationInfo.title,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 18,
-              shadows: [
-                Shadow(
-                  color: Colors.black45,
-                  offset: Offset(1, 1),
-                  blurRadius: 5,
-                ),
-              ],
-            ),
-          ),
-        ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(10),
+        child: child,
       ),
     );
   }
