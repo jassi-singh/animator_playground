@@ -14,15 +14,25 @@ class HomePage extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: GridView.builder(
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-            mainAxisSpacing: 10,
-            crossAxisSpacing: 10,
-          ),
-          itemCount: animationsList.length,
-          itemBuilder: (BuildContext context, int index) {
-            return ItemCard(animationInfo: animationsList[index]);
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            // Calculate crossAxisCount based on screen width
+            // Aim for approximately 200px per item
+            int crossAxisCount = (constraints.maxWidth / 200).floor();
+            // Ensure minimum of 2 columns and maximum of 6 columns
+            crossAxisCount = crossAxisCount.clamp(2, 6);
+            
+            return GridView.builder(
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: crossAxisCount,
+                mainAxisSpacing: 10,
+                crossAxisSpacing: 10,
+              ),
+              itemCount: animationsList.length,
+              itemBuilder: (BuildContext context, int index) {
+                return ItemCard(animationInfo: animationsList[index]);
+              },
+            );
           },
         ),
       ),
