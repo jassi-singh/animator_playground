@@ -19,47 +19,47 @@ Animator Playground is a showcase app featuring 9 unique animations, each with i
 ### 1. Menu Icon
 A modern, animated menu icon that transforms into different states. Used on almost every website by now, simple but impressively animated it becomes a real eye-catcher.
 
-[📹 Watch Menu Icon Animation](videos/menu.mov)
+[📹 Watch Menu Icon Animation](videos/menu.mp4)
 
 ### 2. Loading
 A calming loading animation. The best are always websites that do not need a loading status. If they do, here would be a calming one.
 
-[📹 Watch Loading Animation](videos/loading.mov)
+[📹 Watch Loading Animation](videos/loading.mp4)
 
 ### 3. Rainy Night
 An atmospheric animation featuring falling raindrops that shatter on the ground. The perfect time of day and the perfect weather to program in peace. The raindrops even shatter on the ground.
 
-[📹 Watch Rainy Night Animation](videos/rainy_night.mov)
+[📹 Watch Rainy Night Animation](videos/rainy_night.mp4)
 
 ### 4. Watch
 A customizable watch animation. Classic, noble, modern or playful? What do you want your favorite watch to look like?
 
-[📹 Watch Watch Animation](videos/watch.mov)
+[📹 Watch Watch Animation](videos/watch.mp4)
 
 ### 5. Pac-Man
 An interactive Pac-Man game animation. The classic arcade game is still a lot of fun. The ghosts are chasing you, but you can eat them.
 
-[📹 Watch Pac-Man Animation](videos/pacman.mov)
+[📹 Watch Pac-Man Animation](videos/pacman.mp4)
 
 ### 6. Send Mail
 A delightful mail sending animation. Surprise your visitors with a nice animation instead of a simple "request sent".
 
-[📹 Watch Send Mail Animation](videos/send_mail.mov)
+[📹 Watch Send Mail Animation](videos/send_mail.mp4)
 
 ### 7. Pendulum Wave
 A mesmerizing mathematical animation. If you are not yet fascinated by mathematics, you should be now at the latest. Wonderful what a small calculation brings forth.
 
-[📹 Watch Pendulum Wave Animation](videos/pendulam_wave.mov)
+[📹 Watch Pendulum Wave Animation](videos/pendulam_wave.mp4)
 
 ### 8. Rotating Square
 A simple yet versatile rotating square animation. A simple animation that can be used in many ways. For example, to indicate that the page is loading.
 
-[📹 Watch Rotating Square Animation](videos/rotating_squares.mov)
+[📹 Watch Rotating Square Animation](videos/rotating_squares.mp4)
 
 ### 9. Day Night Slider
 A cool slider animation for day and night mode switching.
 
-[📹 Watch Day Night Slider Animation](videos/day_nigh_slider.mov)
+[📹 Watch Day Night Slider Animation](videos/day_nigh_slider.mp4)
 
 ## 🚀 Getting Started
 
@@ -150,4 +150,4 @@ Inspired by various animation showcases and designed to demonstrate Flutter's po
 
 ---
 
-**Note**: To add videos to this README, place them in a `videos/` directory in the project root and ensure the filenames match the references above (e.g., `menu.mov`, `loading.mov`, etc.).
+**Note**: To add videos to this README, place them in a `videos/` directory in the project root and ensure the filenames match the references above (e.g., `menu.mp4`, `loading.mp4`, etc.).
